@@ -9,9 +9,9 @@ public class InputQuery {
 	Scanner scan=new Scanner(System.in);
 	System.out.println("Enter the query : ");
 	String input=scan.nextLine();
-	QueryParser q=new QueryParser();
-	q.splitQuery(input);
-	q.extractQueryComponents();
+	QueryParser queryParser=new QueryParser();
+	queryParser.splitQuery(input);
+	queryParser.extractQueryComponents();
 	
 	
 	}
